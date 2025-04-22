@@ -1,0 +1,45 @@
+Mandatory Tools:
+
+    1. Nodejs install with atleast 18.0 verson, latest is v22.13.1
+       Run "node -v"
+       https://nodejs.org/en/download
+    
+    2. Visual Studio code editor (Used for Angular)
+       Visual Studio (Used for .Net)
+    
+    3. GIT Setup (Central repository to maintain our code)
+       Version control
+       1. Install git software "Git SCM"
+       2. Create github account 
+       3. have git setup in local machine: 
+            https://github.com/sanjaysamantra1/git_notes/blob/main/git_notes.txt
+
+
+
+
+
+Webdevelopemnt stack:
+ https://oceans.hashnode.dev/2022s-top-technology-stack-for-web-development
+
+ Frontend: Developing UI using frontend technologies
+    HTML
+    CSS
+    Bootstrap: CSS Library with prebuild css , helps to achieve responsiveness, 
+    Angular:
+        Javascript frameworks (RAD, CLI, template system, Routing, form handling)
+    React
+    VueJS
+ Backend
+    Java : Recieves data from database as Java Objects and backend converts javaobjects to JSON format and sends the data to frontend
+    .Net
+    PHP
+    Express
+    Go
+    Nodejs
+    python
+
+    REST API's/ Enpoints/ URLs : https://fakestoreapi.com/products 
+
+ Database
+ Server
+
