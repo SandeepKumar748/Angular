@@ -15,9 +15,6 @@ Mandatory Tools:
             https://github.com/sanjaysamantra1/git_notes/blob/main/git_notes.txt
 
 
-
-
-
 Webdevelopemnt stack:
  https://oceans.hashnode.dev/2022s-top-technology-stack-for-web-development
 

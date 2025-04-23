@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+
+    <!-- Internal CSS -->
+    <style>
+        #add_table{
+            margin-top: 50px;
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h2 style="text-align: center; margin-top: 40px;">Addition using prompt</h2>
+
+    <!-- table>tbody>tr*3>td*2 -->
+    <table id="add_table" border="2" align="center">
+        <tbody>
+            <tr>
+                <td width="30%">a</td>
+                <td id="a"></td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td id="b"></td>
+            </tr>
+            <tr>
+                <td>total(a+b)</td>
+                <td id="result"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- External JS -->
+    <script src="add.js"></script>
+
+</body>
+</html>

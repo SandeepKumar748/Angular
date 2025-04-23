@@ -1,0 +1,63 @@
+HTML Emmets/shortcuts
+==============================
+
+https://docs.emmet.io/cheat-sheet/
+
+#div1 -> ID
+.div2 -> class
+ol>li*5{list-$}  -> Ordered list
+ul>li*5{list-$} -> Un ordered list
+table>tbody>tr*50>td*5{Data-$}
+
+CSS types:
+1. inline -> (style attribute) (restricted to an element)
+    <div style="color:black; ">This is inline css div</div>
+2. internal ->  (style tag/element) (restricted to 1 html page)
+    <style>
+
+    </style>
+3. external css -> 
+    1. write the css in a seperate .css file
+    2. include that in htm;l file using <link>
+        <link rel="stylesheet" href="demo_1.css">
+
+How to use bootstrap
+    Add CDN link to the head of HTML file.
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+How to write and execute Javascript code
+========================================
+
+1. Browser (frontend development)
+    a. Create a javascript file with some havascript content
+    b. Include that javascript file into html file using <Script> tag
+2. NodeJS (Backend Developement)
+    a. Run the created javascriot file in node environment in terminal
+    works with document object, does not work with window object
+
+Note: Every javascript code that runs on browser might not run in Node js
+
+=======================
+
+Most Commonly used Js functions:
+    1. console.log()
+        console: object log(): function
+        Cannot use log() function directly without console
+    2. document.write()
+        document: object write(): function
+        Cannot use write() function directly without console
+    3. window.alert()
+        window: object alert(): function
+        Can use alert() directly because in global context/ with respect to brower everything is in wondow context
+========================
+
+Most commonly used Javascript object
+    1. console : log(), error(), warn(), assert(), table(), time(), timeEnd()
+    2. window : alert(), prompt(), confirm(), print(), close()
+            a. alert() : Display message + ok
+            b. confirm() : message + 2 buttons( ok(true), cancel(false))
+            c. prompt() : message + text box + ok
+    3. document : write(), writeln()
+    4. Math : abs(), sqrt(), cbrt(), max(), min()
+    5. Array : push(), pop(), filter(), map()
+    6. Object : assign(), 
