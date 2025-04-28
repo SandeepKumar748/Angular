@@ -1,0 +1,26 @@
+<script>
+
+    // Where it is Declared
+    let firstName = 'Krishna'
+    var lastName = 'rao'
+    let user = {
+       firstName :'Virat',
+       lastName : 'kohli',
+
+       fullName1 : function(){
+        console.log(`full name is ${this.firstName} ${this.lastName}, ${this}`);
+       },
+       // we cannot define arrow functions in objects
+       // this in arrow functions defined in objects point to window object
+       fullName2 : () => {
+        console.log(`full name is ${this.firstName} ${this.lastName}, ${this}`);
+       }
+    }
+
+    user.fullName1() // How / where it is called // this = user
+    user.fullName2() // Where it is declared // 
+
+    user.lastName = 'Sharma'
+
+    // DOM( document object model)  
+</script>

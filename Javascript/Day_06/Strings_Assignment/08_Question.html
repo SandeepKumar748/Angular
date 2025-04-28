@@ -1,0 +1,13 @@
+<script>
+    // 8. WAP to check if 2 strings are anagram or not
+	// 'listen' - 'silent'    anagram(every char of str1 should be there in str2)
+    let input = 'listen'
+    let input2 = 'silent'
+    function isAnagram(input, input2){
+        if (input.split('').sort().join('') === input2.split('').sort().join(''))
+            return true
+        return false
+    }
+    console.log(isAnagram(input, input2));
+    
+</script>

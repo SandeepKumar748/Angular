@@ -1,0 +1,96 @@
+How Javascript Works
+====================
+-When a javascript code is executed, N # of execution contexts are created.
+-1 Global Execution context is created for every javascript program.
+-For Each Function call 1 execution context is created.
+-Execution context is the environment within which the current code is being executed.
+-Each execution context has two phases: 
+	1. creation phase. (Allocates memory - variables & functions and assign 'undefined' to variables)
+	2. execution phase. (Code gets Executed - assign values to variables & method invocation)
+
+https://www.youtube.com/watch?v=iLWTnMzWtj4&t=1044s
+https://www.jsv9000.app/
+
+
+
+Variables
+=========
+-Variables are containers for storing data values. 
+ Variable is a name of memory location.
+-Variables in Javascript can be declared by using either one of the below 3 keywords:
+ 1. var   
+ 2. let
+ 3. const
+
+	var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.TDZ - No               5.TDZ - Yes                5.TDZ - Yes
+6. Scope                 6. Scope                   6. Scope 
+    function/global         block/functional/global    black/functional/global 
+
+Note: All Variables (var, let, const) are hoisted but only 'var' variables are usable/reachable before declaring
+-let/const variables are not reachable/usable before initialization (Temporal Dead Zone).
+
+var - undefined 
+let and const are <value not assigned>
+
+Hoisting:
+==========
+- Hoisting is a mechanism where variable and function declarations are moved to the top of their containing 
+scope during the compilation phase, before the code is executed. 
+- Variables declared with var are hoisted, but their values are not initialised. 
+They are given an initial value of undefined.
+- Variables declared with let and const are hoisted, but their values are not initialized. 
+Accessing them before declaration results in ReferenceError because they are in Temporal Dead Zone.
+- Function declarations are hoisted, meaning you can call them before they appear in the code.
+
+Type                   Hoisted             Initialized?           Usable before declaration?
+=======                ============        ==============         =========================
+var                     ✅Yes              ❌ undefined
+let                     ✅Yes              ❌ No
+const                   ✅Yes              ❌ No
+Func Declaration		✅ Yes			  ✅ Yes					✅ Allowed
+Func Expression 		No				    ❌ Undefined			    ❌ TypeError
+
+
+
+Temporal Dead Zone
+==================
+-The period between entering scope and being initialized where they cannot be accessed. 
+ This period is the temporal dead zone (TDZ).
+-The state where variables are un-reachable. They are in memory, but they aren't usable.
+-The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
+-if a let/const variable is accessed before its initialization, it would throw a ReferenceError. Because of the TDZ.
+
+Arrow Function Limitations
+--------------------------
+-Arrow functions don't have their own bindings to this, arguments or super cann't be used inside arrow function.
+-Arrow functions don't have access to the new,target keyword.
+-Arrow functions aren't suitable for call, apply and bind methods, which generally rely on establishing a scope.
+-Arrow functions cannot be used as constructors.
+-Arrow functions cannot use yield, within its body.
+
+
+Arrow Function Benefits
+-----------------------
+-Concise syntax
+-Implicit return
+-Lexical 'this' Binding
+-no arguments object(pre-defined keyword)
+-ideal for callbacks
+-good for small functions
+-static 'this' (this doesn't change)
+
+
+
+
+IIFE
+====
+-used when we try to avoid polluting the global scope, 
+-The variables declared inside the IIFE are not visible outside its scope.
+-closure

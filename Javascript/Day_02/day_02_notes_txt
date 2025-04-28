@@ -29,7 +29,7 @@ How to write and execute Javascript code
 ========================================
 
 1. Browser (frontend development)
-    a. Create a javascript file with some havascript content
+    a. Create a javascript file with some javascript content
     b. Include that javascript file into html file using <Script> tag
 2. NodeJS (Backend Developement)
     a. Run the created javascriot file in node environment in terminal

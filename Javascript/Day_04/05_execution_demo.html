@@ -1,0 +1,37 @@
+<script>
+    // execution context - 1 (Global EC)
+    console.log('Global code starts here...')
+    var a = 10;
+    let b = 20;
+    console.log(a);
+
+    // EC 2 -> function EC
+    function add(a, b) {
+        let x = 100;
+        console.log('addition is ', (a + b))
+    }
+
+    // EC 3 - (Function EC 3)
+    function sub(a, b) {
+        let y = 100;
+        console.log('subtraction is ', (a - b))
+        function abc(){
+            console.log(`hellooooooo`);
+            
+        }
+        abc()
+    }
+    add(10, 5)
+    sub(10, 5)
+    console.log('Global code ends here...')
+
+    // 1 Global EC        2 Function EC
+
+    // Execution context phases
+        // 1. memory creation phase
+        // 2. code execution phase
+
+    // callstack - current execution context on the top
+
+
+</script>

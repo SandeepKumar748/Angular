@@ -1,0 +1,57 @@
+Datatypes:
+
+Primitives:                                                     Non-primitive/Complex
+-----------------------                                         ---------------------------
+1. number                                                       1. Object (Object & Array)
+2. string
+3. boolean(true, false)
+4. undefined(undefined)
+5. null
+6. symbol(ES-6)
+7. bigint (const x = 2n ** 53n;)
+    appending n to the end of an integer literal
+
+
+typeof cannot be used to differenciate between array and Object
+
+to differenciate we can use instanceof Array ? returns true or false
+
+we can also use Array.isArray(a) => 
+
+Javascript is a programming language, follows ECMAScript standards.
+ECMAScript is a standart for the scripting language.
+ECMA (European Computer Manufacturer Association) that manages Javascript
+The rules and regulations that define Javascript is ECMAScript
+
+ES_5 <= june 2015
+Es_6 2015 (const, let, class, extends, module, spread operator) =>  standart release
+.
+.
+.
+.
+ES_15 2024
+
+Similarly java 8(2014) and 11 are the standard release of JDK
+
+Typescript is a typed language and it is built on top of javascript 
+It is a super set of Javascript.
+
+on top of ES5, ES6 and with some added features like generics, strongly typed and interfaces and many more
+
+Browser does not understand typescript code, we need to convert typesctipt code to Javascript.
+
+npm -> node package manager
+npx -> node package executer => using npx we can convert ts to js withouth installing library permanently
+
+Javascript                                          Typescript
+--------------------------------------------------------------------------------------
+1. strongly typed  - No                             1. Strongly typed - Yes
+2. directly run on Browser                          2. Not directly run on browser
+3. interafce - No                                   3. interface - Yes
+4. optional interface 
+
+
+
+
+
+Poliphils or substitues are getting generated ?

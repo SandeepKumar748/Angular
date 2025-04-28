@@ -1,0 +1,25 @@
+<script>
+    //  Regular function:  'this' - how/where the function is called
+    // Arrow function : 'this' - where the function is declared
+
+    let log = console.log
+    let firstName = 'Charan';
+    var lastName = 'Reddy';
+    let user = {
+        firstName : 'Virat',
+        lastName : 'Kohli',
+        fullName1: function() { // this is pointing to user object
+            log(this.firstName, this.lastName, this)
+        },
+        // Since there is no execution context for user object
+        // this = window object
+        // in node envi this = global this
+        // arrow functions should not be used in user objects 
+        fullName2: ()=>{ 
+            log(this.firstName, this.lastName, this)
+        }
+    }
+
+    user.fullName1()
+    user.fullName2()
+</script>
