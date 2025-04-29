@@ -1,0 +1,21 @@
+Arrays:
+
+// Traditional for loop
+    - It is flexible to loop at any position 
+
+// for-in loop
+    - We can't start from a specific index or we can't traverse from end 
+
+// for-of loop
+    - 
+
+// forEach -> we can't break in between
+
+
+// Delete deletes the value but the length doesn't end, <item is empty> is shown at deleted index
+delete student[2]
+
+// instance functions
+// static functions -> accessed through Array class as reference
+    Array.isArray(arr)
+
