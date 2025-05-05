@@ -1,0 +1,34 @@
+<script>
+    let obj = {
+        a : 10,
+        b : 20
+    }
+
+    obj.a = 13 // can modify object - yes
+    obj.c = 30 // can add n property
+    delete obj.b; // delete an existing property - yes
+    console.log(obj);
+
+    
+    let obj2 = {
+        a : 10,
+        b : 20,
+        d : {
+            e : 20
+        }
+    }
+
+    Object.freeze(obj2)
+
+    obj2.a = 13 // can modify object - no
+    obj2.c = 30 // can add n property
+    delete obj2.b; // delete an existing property - no
+    obj2.d.e = 40 // can modify a nested property- yes
+    console.log(obj2);
+
+    console.log(Object.isFrozen(obj2));
+    console.log(Object.isFrozen(obj));
+    
+    
+    
+</script>

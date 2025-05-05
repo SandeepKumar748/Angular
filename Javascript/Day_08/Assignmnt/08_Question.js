@@ -12,22 +12,10 @@
         { eId: 105, name: 'deepak', sal: 8000, gender: 'male' }
       ];
 
-    let output = {
-
-    }
-
-    // employees.sort((a, b) => {
-    //     if(a.name > b.name) return 1;
-    //     else if(a.name < b.name) return -1
-    //     return 0
-    // }).forEach(emp => {
-        
-    // })
-
+    let output = {}
     employees.forEach(emp => {
             if(!output[emp.name]) {
                 output[emp.name] = employees.filter(emp1 => emp1.name == emp.name)
             }
         })
     console.log(output);
-    

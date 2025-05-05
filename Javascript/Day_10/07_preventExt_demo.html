@@ -1,0 +1,35 @@
+<script>
+    let obj = {
+        a : 10,
+        b : 20
+    }
+
+    obj.a = 13 // can modify object - yes
+    obj.c = 30 // can add n property
+    delete obj.b; // delete an existing property - yes
+    console.log(obj);
+
+
+    let obj2 = {
+        a : 10,
+        b : 20,
+        d : {
+            e : 20
+        }
+    }
+
+    Object.preventExtensions(obj2) // structure of the object cann't be modified, value of the properties can be changed.
+
+    obj2.a = 13 // can modify property values - yes
+    obj2.c = 30 // can add n property - n0
+    delete obj2.b; // delete an existing property - yes
+    obj2.d.e = 40 // can modify a nested property- yes
+    obj2.d.a = 10 // can modify structure of nested property- yes
+    console.log(obj2);
+
+    console.log(Object.isExtensible(obj2));
+    console.log(Object.isExtensible(obj));
+    
+    
+    
+</script>

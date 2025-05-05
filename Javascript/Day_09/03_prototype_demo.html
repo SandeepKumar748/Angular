@@ -1,0 +1,26 @@
+<script>
+    class Student {
+        constructor(id, name){
+            this.id = id
+            this.name = name;
+            // this.clgName = "Eureka"
+            // this.clgAdd = "Knox Ville"
+        }
+    }
+
+    Student.prototype.clgName = "Eureka"
+    Student.prototype.clgAdd = "Knoxville"
+
+    let std1 = new Student(101, "Sandeep")
+    let std2 = new Student(102, "Kishor")
+
+    std1.clgName = "Eureka Infotech"
+
+    console.log(std1, std1.clgName, std2, std2.clgName);
+
+    // toAccess prototype property directly 
+    std1.__proto__.clgName = "Eureka i"
+    console.log();
+    console.log(std1, std1.clgName, std2, std2.clgName);
+    
+</script>

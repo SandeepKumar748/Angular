@@ -1,0 +1,28 @@
+<script>
+    class Student {
+        constructor (roll, name){
+            this.roll = roll
+            this.name = name
+            this.clgeName = "Eur"
+        }
+    }
+
+    Student.prototype.clgeName = 'Eureka'
+    Student.prototype.fun = function() {
+        console.log(`proto fun `);
+    }
+
+    // Student has 2 direct properties and one prototype property
+
+    let std1 = new Student(101, 'Rohit')
+    let std2 = new Student(102, 'dob')
+
+    for(let propetry in std1){
+        console.log(propetry);
+    }
+
+    console.log('clgeName' in std1); // in can access direct and prototype object too
+    
+    console.log(std1.hasOwnProperty('clgeName')); //true // hasOwnProperty() can only access direct properties    
+
+</script>

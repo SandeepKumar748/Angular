@@ -1,0 +1,25 @@
+<script>
+    class Student {
+        constructor (roll, name){
+            this.roll = roll
+            this.name = name
+            this.clgeName = "Eur"
+        }
+    }
+
+    Student.prototype.clgeName = 'Eureka'
+    Student.prototype.fun = function() {
+        console.log(`proto fun `);
+    }
+
+    let std1 = new Student(101, "Sandeep")
+    std1.__proto__.clgeAdd = "Knoxville"
+    let std2 = new Student(102, "Kumar")
+
+
+    console.log(Object.assign(std2, std1));
+
+    // If the property already exists, it overwrites the target
+    
+    
+</script>

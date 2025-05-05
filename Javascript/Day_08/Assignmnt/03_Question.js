@@ -9,3 +9,5 @@ let employees = [
   ];
 
 console.log(employees.filter(a => a.sal > 6000));
+
+console.log(employees.filter(emp => emp.gender == 'female'));
